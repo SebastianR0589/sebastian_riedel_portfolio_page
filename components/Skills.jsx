@@ -64,7 +64,7 @@ export default function Skills() {
   ]
 };
   return (
-   <section className="w-full">
+   <section className="w-full" id="skills">
       <h1 className="text-3xl font-bold mb-8 text-center">My Skills</h1>
 
 <div className="flex justify-center mb-4">

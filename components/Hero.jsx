@@ -14,7 +14,7 @@ const text = {
 }
 
   return (
-<section className="flex flex-col md:flex-row items-center justify-center gap-14 min-h-screen p-8">
+<section className="flex flex-col md:flex-row items-center justify-center gap-14 min-h-screen p-8" id="about">
   {/* Profile image */}
   <img
     src="/Profilbild.jpg"
