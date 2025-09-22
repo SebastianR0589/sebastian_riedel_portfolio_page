@@ -1,4 +1,3 @@
-// components/Navbar.jsx (fancy animated underline)
 const items = ["about", "skills", "projects", "contact"];
 
 export default function Navigation() {
@@ -17,7 +16,6 @@ export default function Navigation() {
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </a>
 
-              {/* UNDERLINE — pointer-events-none so it doesn't block clicks */}
               <span
                 aria-hidden="true"
                 className="pointer-events-none absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"

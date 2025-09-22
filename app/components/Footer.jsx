@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <footer className="w-full bg-white/10 backdrop-blur-md py-8 mt-16" id="contact">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Header */}
+
         <h2 className="text-xl font-semibold text-white mb-4">Contact</h2>
 
-        {/* Icons */}
+
         <div className="flex justify-center gap-6 mb-6">
           <a href="mailto:sebastian.riedel0589@gmail.com" target="_blank" rel="noopener noreferrer">
             <FaEnvelope className="text-2xl text-gray-400 hover:text-white transition" />
@@ -23,7 +23,7 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Small text */}
+   
         <p className="text-sm text-gray-500">
           © 2025 Created by <span className="text-gray-300">Sebastian Riedel</span>
         </p>

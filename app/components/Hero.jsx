@@ -2,8 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image";
-import german_flag from "../public/german_flag.svg"
-import uk_flag from "../public/uk_flag.svg"
+
 
 export default function Hero() {
 const [lang, setLang] = useState("de");
@@ -14,18 +13,19 @@ const text = {
 }
 
   return (
-<section className="flex flex-col md:flex-row items-center justify-center gap-14 min-h-screen p-8" id="about">
-  {/* Profile image */}
+<section className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-screen p-8 bg-black" id="about">
+
   <img
     src="/Profilbild.jpg"
     alt="Your Name"
-    className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover shadow-lg -mb-6 md:mb-0 md:-mr-8"
+    className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-[0_0_30px_rgba(255,255,255,0.2)]"
+    
   />
 
-  {/* Text box */}
+
   <div className="flex flex-col items-start max-w-xl w-full">
-    <h1 className="text-4xl md:text-5xl font-extrabold text-white/90">Sebastian Riedel</h1>
-    <h2 className="text-2xl text-indigo-200 mt-1">Frontend Developer | Fullstack Developer</h2>
+    <h1 className="text-4xl font-bold text-white mb-2">Sebastian Riedel</h1>
+    <h2 className="text-xl text-gray-200 mb-4">Frontend Developer | Fullstack Developer</h2>
 
     <div className="bg-gradient-to-r from-white/10 to-white/20 backdrop-blur-lg rounded-3xl p-8 mt-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
       <p className="text-gray-200 leading-relaxed">
@@ -35,7 +35,7 @@ const text = {
 <div className="flex gap-2 justify-end mt-4">
   <button onClick={() => setLang("de")}>
     <Image
-      src={german_flag}
+      src="/flags/germany_flag.svg"
       alt="DE"
       width={32}
       height={32}
@@ -45,7 +45,7 @@ const text = {
 
   <button onClick={() => setLang("en")}>
     <Image
-      src={uk_flag}
+      src="/flags/uk_flag.svg"
       alt="EN"
       width={32}
       height={32}
