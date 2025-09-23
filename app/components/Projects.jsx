@@ -18,8 +18,8 @@ export default function Projects() {
             key={cat}
             className={`px-4 py-2 font-medium transition ${
               activeTab === cat
-                ? "border-b-2 border-white text-white"
-                : "text-gray-400 hover:text-white"
+                ? "text-[#33A1FD] drop-shadow-[0_0_6px_#33A1FD]"
+                : "text-gray-400 hover:text-[#e63946] hover:drop-shadow-[0_0_6px_#e63946] transition"
             }`}
             onClick={() => setActiveTab(cat)}
           >
