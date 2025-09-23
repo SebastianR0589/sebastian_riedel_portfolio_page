@@ -64,7 +64,7 @@ export default function Skills() {
   ]
 };
   return (
-   <section className="w-full min-h-screen px-8 py-20" id="skills">
+   <section className="w-full min-h-screen px-8 py-16" id="skills">
       <h1 className="text-3xl font-bold mb-8 text-center">My Skills</h1>
 
 <div className="flex justify-center mb-4">
@@ -73,11 +73,10 @@ export default function Skills() {
       <button
         key={cat}
         onClick={() => setActiveTab(cat)}
-        className={`px-4 py-2 text-sm font-medium transition ${
+        className={`relative px-4 py-2 font-bold transition-colors ${
           activeTab === cat
-            ? "border-b-2 border-white text-white"
-            : "text-gray-400 hover:text-white"
-        }`}
+            ? "text-[#33A1FD] drop-shadow-[0_0_6px_#33A1FD]" : "text-gray-400"}
+     hover:text-[#e63946] hover:drop-shadow-[0_0_6px_#e63946] transition`}
       >
         {cat.charAt(0).toUpperCase() + cat.slice(1)}
       </button>

@@ -1,29 +1,52 @@
-const items = ["about", "skills", "projects", "contact"];
+"use client";
 
-export default function Navigation() {
+import { useEffect, useState } from "react";
+
+export default function AsideMenu() {
+  const sections = ["about", "skills", "projects", "contact"];
+  const [active, setActive] = useState("about");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+       { threshold: [0.25, 0.5, 0.75] }  
+    );
+
+    sections.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <nav className="w-full sticky top-0 bg-black/50 backdrop-blur-md z-50">
-      <div className="max-w-5xl mx-auto flex justify-between items-center py-4 px-6 border-b border-gray-700">
-        <h1 className="text-xl font-bold text-white">Sebastian Riedel Portfolio</h1>
-
-        <ul className="flex gap-6 text-gray-300">
-          {items.map((item) => (
-            <li key={item} className="relative group">
-              <a
-                href={`#${item}`}
-                className="inline-block hover:text-white transition"
-              >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
-              </a>
-
-              <span
-                aria-hidden="true"
-                className="pointer-events-none absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
-    </nav>
+    <aside className="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-50">
+      {sections.map((id) => (
+        <a
+          key={id}
+          href={`#${id}`}
+          className={`relative text-lg font-bold transition
+            ${active === id 
+              ? "text-[#33A1FD] drop-shadow-[0_0_6px_#33A1FD]" 
+              : "text-gray-400"} 
+            hover:text-[#FF3355] hover:drop-shadow-[0_0_6px_#FF3355]`}
+        >
+          {id.charAt(0).toUpperCase() + id.slice(1)}
+          {active === id && (
+            <span
+              className="absolute left-1/2 -bottom-1 w-2 h-2 rounded-full bg-[#33A1FD] blur-sm"
+              style={{ transform: "translateX(-50%)" }}
+            />
+          )}
+        </a>
+      ))}
+    </aside>
   );
 }

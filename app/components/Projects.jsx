@@ -9,9 +9,10 @@ export default function Projects() {
   const [activeTab, setActiveTab] = useState("frontend");
 
   return (
-    <section className="w-full max-w-6xl mx-auto" id="projects">
-      {/* Tabs */}
-      <div className="flex justify-center mb-6 border-b border-gray-700">
+    <section className="w-full min-h-screen px-8 py-16" id="projects">
+ 
+<div className="flex justify-center mb-6">
+  <div className="flex border-b border-gray-700">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -26,9 +27,10 @@ export default function Projects() {
           </button>
         ))}
       </div>
+      </div>
 
-      {/* Projects grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+     
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
         {projects[activeTab].map((project) => (
           <ProjectsTabsModel key={project.name} project={project} />
         ))}

@@ -23,7 +23,7 @@ export default function ProjectCard({ project }) {
       href={project.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative group bg-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+      className="relative group bg-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition w-72 h-72"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
