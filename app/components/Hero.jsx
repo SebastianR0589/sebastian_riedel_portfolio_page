@@ -13,52 +13,63 @@ const text = {
 }
 
   return (
-<section className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-screen p-8 bg-black" id="about">
+<section
+  className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-screen px-8 bg-black"
+  id="about"
+>
+  <div className="z-10 flex flex-col md:items-end text-left md:text-right md:w-1/2 md:pr-6">
+    <h1 className="text-6xl font-extrabold text-white mb-4 leading-tight">
+      Sebastian Riedel
+    </h1>
+    <h2 className="text-2xl text-gray-300 mb-6">
+      Frontend Developer | Fullstack Developer
+    </h2>
 
-  <img
-    src="/Profilbild.jpg"
-    alt="Your Name"
-    className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-[0_0_30px_rgba(255,255,255,0.2)]"
-    
-  />
+    <p className="text-lg text-gray-300 leading-relaxed max-w-xl mb-6">
+      {text[lang]}
+    </p>
 
-
-  <div className="flex flex-col items-start max-w-xl w-full">
-    <h1 className="text-4xl font-bold text-white mb-2">Sebastian Riedel</h1>
-    <h2 className="text-xl text-gray-200 mb-4">Frontend Developer | Fullstack Developer</h2>
-
-    <div className="bg-gradient-to-r from-white/10 to-white/20 backdrop-blur-lg rounded-3xl p-8 mt-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-      <p className="text-gray-200 leading-relaxed">
-     {text[lang]}
-      </p>
-        
-<div className="flex gap-2 justify-end mt-4">
-  <button onClick={() => setLang("de")}>
-    <Image
-      src="/flags/germany_flag.svg"
-      alt="DE"
-      width={32}
-      height={32}
-      className={`${lang === "de" ? "grayscale-0 opacity-100" : "grayscale opacity-50"} transition duration-300`}
-    />
-  </button>
-
-  <button onClick={() => setLang("en")}>
-    <Image
-      src="/flags/uk_flag.svg"
-      alt="EN"
-      width={32}
-      height={32}
-      className={`${lang === "en" ? "grayscale-0 opacity-100" : "grayscale opacity-50"} transition duration-300`}
-    />
-  </button>
-</div>
-
-
+    <div className="flex gap-3 justify-end">
+      <button onClick={() => setLang("de")}>
+        <Image
+          src="/flags/germany_flag.svg"
+          alt="DE"
+          width={32}
+          height={32}
+          className={`${
+            lang === "de"
+              ? "grayscale-0 opacity-100"
+              : "grayscale opacity-50"
+          } transition duration-300`}
+        />
+      </button>
+      <button onClick={() => setLang("en")}>
+        <Image
+          src="/flags/uk_flag.svg"
+          alt="EN"
+          width={32}
+          height={32}
+          className={`${
+            lang === "en"
+              ? "grayscale-0 opacity-100"
+              : "grayscale opacity-50"
+          } transition duration-300`}
+        />
+      </button>
     </div>
+  </div>
 
+  <div className="relative w-full md:w-1/2 flex justify-center md:justify-start">
+    <img
+      src="/profile_image.png"
+      alt="Sebastian Riedel"
+      className="max-h-[80vh] w-auto object-contain drop-shadow-[0_0_40px_rgba(51,161,253,0.4)] profile-image"
+    />
   </div>
 </section>
+
+
+
 
 
   )}

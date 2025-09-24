@@ -27,7 +27,7 @@ export default function AsideMenu() {
   }, []);
 
   return (
-    <aside className="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-50">
+    <aside className="fixed left-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-50">
       {sections.map((id) => (
         <a
           key={id}
