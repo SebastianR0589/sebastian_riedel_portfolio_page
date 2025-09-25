@@ -1,4 +1,4 @@
-import { SiReact } from "react-icons/si";
+import { SiReact, SiNextdotjs } from "react-icons/si";
 
 export const projects = {
   frontend: [
@@ -12,7 +12,7 @@ export const projects = {
         "/projects/tenzies/mid_game.PNG",
         "/projects/tenzies/won_game.PNG",
       ],
-      link: "https://github.com/yourname/tenzies-game",
+      link: "https://github.com/SebastianR0589/tenzies_game_project",
     },
      {
       name: "Hangman Game",
@@ -25,7 +25,7 @@ export const projects = {
           "/projects/hangman/new_game.PNG",
             "/projects/hangman/won_game.PNG",
       ],
-      link: "https://github.com/yourname/tenzies-game",
+      link: "https://github.com/SebastianR0589/hangman_game_project",
     },
        {
       name: "Manga Recommendations App",
@@ -37,9 +37,30 @@ export const projects = {
         "/projects/manga/main_interface.PNG",
         "/projects/manga/recommendation_response.PNG",
       ],
-      link: "https://github.com/yourname/tenzies-game",
+      link: "https://github.com/SebastianR0589/manga_recommendation_project",
     },
   ],
-  fullstack: [/* ... */],
-  backend: [/* ... */],
+  fullstack: [  {
+      name: "Portfolio Page",
+      framework: "Next.js",
+      icon: <SiNextdotjs size={32} />,
+      color: "#0a0a0aff",
+      images: [
+        "/projects/portfolio/hero_section.PNG",
+        "/projects/portfolio/skills_section.PNG",
+        "/projects/portfolio/projects_section.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/sebastian_riedel_portfolio_page",
+    },
+  ],
+  backend: [{
+      name: "Work in progress",
+      framework: "",
+      icon: <></>,
+      color: "#0a0a0aff",
+      images: [
+        "/projects/temporary.PNG",  
+      ],
+      link: "",
+    },],
 };

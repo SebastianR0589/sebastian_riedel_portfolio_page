@@ -2,7 +2,7 @@ import { FaEnvelope, FaGithub, FaLinkedin, FaXing } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full px-8 py-16 bg-black" id="contact">
+    <footer className="w-full px-8 py-16" id="contact">
       <div className="max-w-4xl mx-auto text-center">
 
         <h2 className="text-xl font-semibold text-white mb-4">Contact</h2>

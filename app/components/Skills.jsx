@@ -73,7 +73,7 @@ export default function Skills() {
       <button
         key={cat}
         onClick={() => setActiveTab(cat)}
-        className={`relative px-4 py-2 font-bold transition-colors ${
+        className={`relative px-4 py-2 font-bold transition-colors hover-3d ${
           activeTab === cat
             ? "text-[#33A1FD] drop-shadow-[0_0_6px_#33A1FD]" : "text-gray-400"}
      hover:text-[#e63946] hover:drop-shadow-[0_0_6px_#e63946] transition`}

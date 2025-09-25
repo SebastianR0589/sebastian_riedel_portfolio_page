@@ -3,13 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-inter: 'Inter', sans-serif;
+  --font-grotesk: 'Space Grotesk', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,10 +15,31 @@
 }
 
 body {
-  background: var(--background);
+  color:white;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+  background: linear-gradient(
+    270deg,
+    #000000,
+    #1a2a3a,
+    #2a0d12,
+    #000000
+  );
+  background-size: 400% 400%;
+  animation: bgMove 30s ease infinite;
+ 
 }
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-grotesk);
+}
+
 
 
 html {
@@ -46,4 +62,26 @@ html {
   linear-gradient(to right, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
   mask-repeat: no-repeat;
   mask-size: cover;
+}
+
+
+.shadow-neon-red {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4), 0 0 40px rgba(255, 0, 0, 0.2);
+}
+.shadow-neon-blue {
+  box-shadow: 0 0 20px rgba(51, 161, 253, 0.4), 0 0 40px rgba(51, 161, 253, 0.2);
+}
+
+
+.hover-3d {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+.hover-3d:hover {
+  transform: perspective(1000px) rotateY(3deg) scale(1.05);
+}
+
+
+.theme-transition {
+  transition: all 0.5s ease-in-out;
 }

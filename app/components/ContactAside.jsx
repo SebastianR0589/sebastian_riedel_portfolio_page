@@ -2,7 +2,7 @@ import { FaEnvelope, FaGithub, FaLinkedin, FaXing } from "react-icons/fa";
 
 export default function AsideMenu() {
   return (
-    <aside className="hidden md:flex fixed right-4 top-1/2 -translate-y-1/2 flex-col items-center gap-6">
+    <aside className="hidden md:flex fixed right-4 top-1/2 -translate-y-1/2 flex-col items-center gap-6 hover-3d">
       <div className="w-px h-32 bg-gray-500/50"></div>
 
     

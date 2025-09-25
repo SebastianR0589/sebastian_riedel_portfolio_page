@@ -16,7 +16,7 @@ export default function Projects() {
         {categories.map((cat) => (
           <button
             key={cat}
-            className={`px-4 py-2 font-medium transition ${
+            className={`px-4 py-2 font-medium transition hover-3d ${
               activeTab === cat
                 ? "text-[#33A1FD] drop-shadow-[0_0_6px_#33A1FD]"
                 : "text-gray-400 hover:text-[#e63946] hover:drop-shadow-[0_0_6px_#e63946] transition"

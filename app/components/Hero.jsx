@@ -14,7 +14,7 @@ const text = {
 
   return (
 <section
-  className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-screen px-8 bg-black"
+  className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-screen px-8"
   id="about"
 >
   <div className="z-10 flex flex-col md:items-end text-left md:text-right md:w-1/2 md:pr-6">
@@ -59,7 +59,7 @@ const text = {
     </div>
   </div>
 
-  <div className="relative w-full md:w-1/2 flex justify-center md:justify-start">
+  <div className="relative w-full md:w-1/2 flex justify-center md:justify-start hover-3d">
     <img
       src="/profile_image.png"
       alt="Sebastian Riedel"
