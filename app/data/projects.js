@@ -2,6 +2,18 @@ import { SiReact, SiNextdotjs } from "react-icons/si";
 
 export const projects = {
   frontend: [
+        {
+      name: "CRUD app sample",
+      framework: "React",
+      icon: <SiReact size={32} />,
+      color: "#61dafb",
+      images: [
+        "/projects/crud/standard.PNG",
+        "/projects/crud/add.PNG",
+        "/projects/crud/edit.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/CRUD_app_sample",
+    },
     {
       name: "Tenzies Game",
       framework: "React",
