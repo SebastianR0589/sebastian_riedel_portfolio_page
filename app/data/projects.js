@@ -1,4 +1,4 @@
-import { SiReact, SiNextdotjs } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiNodedotjs } from "react-icons/si";
 
 export const projects = {
   frontend: [
@@ -56,7 +56,7 @@ export const projects = {
       name: "Portfolio Page",
       framework: "Next.js",
       icon: <SiNextdotjs size={32} />,
-      color: "#0a0a0aff",
+      color: "#f1f1f1ff",
       images: [
         "/projects/portfolio/hero_section.PNG",
         "/projects/portfolio/skills_section.PNG",
@@ -66,13 +66,15 @@ export const projects = {
     },
   ],
   backend: [{
-      name: "Work in progress",
-      framework: "",
-      icon: <></>,
-      color: "#0a0a0aff",
+      name: "REST API Sample Travel Locations",
+      framework: "Node.js",
+      icon: <SiNodedotjs size={32}/>,
+      color: "#339933",
       images: [
-        "/projects/temporary.PNG",  
+        "/projects/rest_api_sample/data.PNG",
+        "/projects/rest_api_sample/utils.PNG",
+        "/projects/rest_api_sample/server.PNG",
       ],
-      link: "",
+      link: "https://github.com/SebastianR0589/REST_API_sample_travel_locations",
     },],
 };
