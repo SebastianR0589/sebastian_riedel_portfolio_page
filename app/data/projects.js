@@ -13,6 +13,7 @@ export const projects = {
         "/projects/crud/edit.PNG",
       ],
       link: "https://github.com/SebastianR0589/CRUD_app_sample",
+      vercel: "https://sebastian-riedel-crud-app-sample.vercel.app/",
     },
     {
       name: "Tenzies Game",
@@ -25,6 +26,7 @@ export const projects = {
         "/projects/tenzies/won_game.PNG",
       ],
       link: "https://github.com/SebastianR0589/tenzies_game_project",
+      vercel: "https://sebastian-riedel-tenzies-game-proje.vercel.app/",
     },
      {
       name: "Hangman Game",
@@ -38,6 +40,7 @@ export const projects = {
             "/projects/hangman/won_game.PNG",
       ],
       link: "https://github.com/SebastianR0589/hangman_game_project",
+      vercel: "https://sebastian-riedel-hangman-game-proje.vercel.app/",
     },
        {
       name: "Manga Recommendations App",
@@ -50,6 +53,7 @@ export const projects = {
         "/projects/manga/recommendation_response.PNG",
       ],
       link: "https://github.com/SebastianR0589/manga_recommendation_project",
+      vercel: "https://sebastian-riedel-manga-recommendati.vercel.app/",
     },
   ],
   fullstack: [  {
@@ -63,6 +67,7 @@ export const projects = {
         "/projects/portfolio/projects_section.PNG",
       ],
       link: "https://github.com/SebastianR0589/sebastian_riedel_portfolio_page",
+      vercel: "https://sebastian-riedel-portfolio.vercel.app/",
     },
   ],
   backend: [{

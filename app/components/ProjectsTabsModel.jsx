@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { SiVercel, SiGithub} from "react-icons/si";
 
 export default function ProjectCard({ project }) {
   const [hovered, setHovered] = useState(false);
@@ -8,6 +9,7 @@ export default function ProjectCard({ project }) {
   const images = project.images || ["/Profilbild.jpg"];
   const icon = project.icon || null;
   const color = project.color || "white";
+
 
   useEffect(() => {
     if (!hovered || images.length <= 1) return;
@@ -19,25 +21,27 @@ export default function ProjectCard({ project }) {
   }, [hovered, images.length]);
 
   return (
-    <a
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="relative group bg-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition w-72 h-72 hover-3d"
+    <div
+      className="relative bg-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition w-72 h-72 hover-3d"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
+
       <img
         src={images[currentImage]}
         alt={project.name}
-        className="w-full h-full object-cover transition-transform group-hover:scale-105"
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
+
       <div
-        className={`absolute inset-0 bg-black/60 flex flex-col justify-between p-4 transition ${
+        className={`absolute inset-0 bg-black/60 flex flex-col justify-between p-4 transition-opacity duration-500 ${
           hovered ? "opacity-0" : "opacity-100"
         }`}
       >
-        <div className="flex items-center gap-2 text-lg font-bold" style={{ color }}>
+        <div
+          className="flex items-center gap-2 text-lg font-bold"
+          style={{ color }}
+        >
           {icon}
           <span>{project.framework}</span>
         </div>
@@ -45,6 +49,42 @@ export default function ProjectCard({ project }) {
           {project.name}
         </span>
       </div>
-    </a>
+
+      {hovered && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 transition-opacity duration-500">
+          {project.vercel ? (
+            <>
+              <div className="w-20 h-px bg-white/50 scale-x-0 animate-[growLine_0.4s_ease-out_forwards]"></div>
+
+              <a
+                href={project.vercel}
+                target="_blank"
+                rel="noopener noreferrer"
+                 className="absolute top-1/2 -translate-y-[140%] p-3 rounded-full bg-black/50 text-white hover:scale-110 transition-transform"
+              >
+                <SiVercel size={30} />
+              </a>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-1/2 translate-y-[140%] p-3 rounded-full bg-black/50 text-white hover:scale-110 transition-transform"
+              >
+                <SiGithub size={30} />
+              </a>
+            </>
+          ) : (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-black/50 text-white hover:scale-110 transition-transform"
+            >
+              <SiGithub size={34} />
+            </a>
+          )}
+        </div>
+      )}
+    </div>
   );
 }
