@@ -51,39 +51,44 @@ export default function ProjectCard({ project }) {
       </div>
 
       {hovered && (
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 transition-opacity duration-500">
-          {project.vercel ? (
-            <>
-              <div className="w-20 h-px bg-white/50 scale-x-0 animate-[growLine_0.4s_ease-out_forwards]"></div>
+     <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 transition-opacity duration-500">
+  {project.vercel ? (
+    <>
+      <div className="w-20 h-px bg-white/50 scale-x-0 animate-[growLine_0.4s_ease-out_forwards]"></div>
 
-              <a
-                href={project.vercel}
-                target="_blank"
-                rel="noopener noreferrer"
-                 className="absolute top-1/2 -translate-y-[140%] p-3 rounded-full bg-black/50 text-white hover:scale-110 transition-transform"
-              >
-                <SiVercel size={30} />
-              </a>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute top-1/2 translate-y-[140%] p-3 rounded-full bg-black/50 text-white hover:scale-110 transition-transform"
-              >
-                <SiGithub size={30} />
-              </a>
-            </>
-          ) : (
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-black/50 text-white hover:scale-110 transition-transform"
-            >
-              <SiGithub size={34} />
-            </a>
-          )}
-        </div>
+      <a
+        href={project.vercel}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute top-1/2 -translate-y-[160%] px-3 py-2 rounded-full bg-black/50 text-white hover:scale-110 transition-transform flex items-center gap-2"
+      >
+        <SiVercel size={24} />
+        <span className="text-sm font-medium">Demo</span>
+      </a>
+
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute top-1/2 translate-y-[60%] px-3 py-2 rounded-full bg-black/50 text-white hover:scale-110 transition-transform flex items-center gap-2"
+      >
+        <SiGithub size={26} />
+        <span className="text-sm font-medium">Repo</span>
+      </a>
+    </>
+  ) : (
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="absolute top-1/2 -translate-y-1/2 px-3 py-2 rounded-full bg-black/50 text-white hover:scale-110 transition-transform flex items-center gap-2"
+    >
+      <SiGithub size={30} />
+      <span className="text-sm font-medium">Repo</span>
+    </a>
+  )}
+</div>
+
       )}
     </div>
   );
