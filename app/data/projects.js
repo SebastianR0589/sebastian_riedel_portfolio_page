@@ -81,5 +81,17 @@ export const projects = {
         "/projects/rest_api_sample/server.PNG",
       ],
       link: "https://github.com/SebastianR0589/REST_API_sample_travel_locations",
+    },
+  {
+      name: "Paranormal Sightings app",
+      framework: "Node.js",
+      icon: <SiNodedotjs size={32}/>,
+      color: "#339933",
+      images: [
+        "/projects/paranormal_sightings/home.PNG",
+        "/projects/paranormal_sightings/read.PNG",
+        "/projects/paranormal_sightings/upload.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/Paranormal_Sightings_App",
     },],
 };
