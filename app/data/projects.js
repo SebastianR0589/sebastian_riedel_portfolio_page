@@ -93,5 +93,6 @@ export const projects = {
         "/projects/paranormal_sightings/upload.PNG",
       ],
       link: "https://github.com/SebastianR0589/Paranormal_Sightings_App",
-    },],
+    },
+  ],
 };
