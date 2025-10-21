@@ -1,4 +1,4 @@
-import { SiReact, SiNextdotjs, SiNodedotjs } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiNodedotjs, SiExpress } from "react-icons/si";
 
 export const projects = {
   frontend: [
@@ -93,6 +93,18 @@ export const projects = {
         "/projects/paranormal_sightings/upload.PNG",
       ],
       link: "https://github.com/SebastianR0589/Paranormal_Sightings_App",
+    },
+      {
+      name: "Express.js API Sample startups",
+      framework: "Express.js",
+      icon: <SiExpress size={32}/>,
+      color: "#f1f1f1ff",
+      images: [
+        "/projects/express_api_sample/server.PNG",
+        "/projects/express_api_sample/controller.PNG",
+        "/projects/express_api_sample/routes.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/Express_API_Sample",
     },
   ],
 };
