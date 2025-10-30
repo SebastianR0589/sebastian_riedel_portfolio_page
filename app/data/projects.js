@@ -106,5 +106,17 @@ export const projects = {
       ],
       link: "https://github.com/SebastianR0589/Express_API_Sample",
     },
+    {
+      name: "Express.js Vinyl Store",
+      framework: "Express.js",
+      icon: <SiExpress size={32}/>,
+      color: "#f1f1f1ff",
+      images: [
+        "/projects/vinyl_store/folders.PNG",
+        "/projects/vinyl_store/controller.PNG",
+        "/projects/vinyl_store/routes.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/Vinyl_Store",
+    },
   ],
 };
