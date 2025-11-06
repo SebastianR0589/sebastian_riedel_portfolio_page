@@ -1,4 +1,4 @@
-import { SiReact, SiNextdotjs, SiNodedotjs, SiExpress } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiPostgresql } from "react-icons/si";
 
 export const projects = {
   frontend: [
@@ -117,6 +117,18 @@ export const projects = {
         "/projects/vinyl_store/routes.PNG",
       ],
       link: "https://github.com/SebastianR0589/Vinyl_Store",
+    },
+     {
+      name: "SQL Sample Collection",
+      framework: "SQL",
+      icon: <SiPostgresql size={32}/>,
+      color: "#336791",
+      images: [
+        "/projects/sql_sample/base.PNG",
+        "/projects/sql_sample/data.PNG",
+        "/projects/sql_sample/queries.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/SQL-example",
     },
   ],
 };
