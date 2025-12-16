@@ -1,4 +1,4 @@
-import { SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiPostgresql } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiPostgresql, SiSpringboot } from "react-icons/si";
 
 export const projects = {
   frontend: [
@@ -70,15 +70,28 @@ export const projects = {
       vercel: "https://sebastian-riedel-portfolio.vercel.app/",
     },
   ],
-  backend: [{
-      name: "REST API Sample Travel Locations",
+  backend: [
+    {
+      name: "Java Springboot API Sample Runs",
+      framework: "Java Springboot",
+      icon: <SiSpringboot size={32}/>,
+      color: "#6DB33F",
+      images: [
+        "/projects/java_rest_api_sample/files.PNG",
+        "/projects/java_rest_api_sample/controller.PNG",
+        "/projects/java_rest_api_sample/repository.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/Java-rest-api-demo",
+    },
+    {
+      name: "Node.js REST API Sample Travel Locations",
       framework: "Node.js",
       icon: <SiNodedotjs size={32}/>,
       color: "#339933",
       images: [
-        "/projects/rest_api_sample/data.PNG",
-        "/projects/rest_api_sample/utils.PNG",
-        "/projects/rest_api_sample/server.PNG",
+        "/projects/node_rest_api_sample/data.PNG",
+        "/projects/node_rest_api_sample/utils.PNG",
+        "/projects/node_rest_api_sample/server.PNG",
       ],
       link: "https://github.com/SebastianR0589/REST_API_sample_travel_locations",
     },

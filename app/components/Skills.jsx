@@ -25,14 +25,14 @@ export default function Skills() {
     { name: "Node.js", level: 2 },
     { name: "Express.js", level: 2 },
     { name: "Nest.js", level: 2 },
-    { name: "Java Spring Boot", level: 1 },
+    { name: "Java Spring Boot", level: 3 },
     { name: "REST API", level: 3 },
     { name: "GraphQL", level: 3 },
   ],
   databases: [
     { name: "MongoDB", level: 2 },
     { name: "MySQL", level: 2 },
-    { name: "PostgreSQL", level: 2 },
+    { name: "PostgreSQL", level: 3 },
   ],
   devops: [
     { name: "Git", level: 4 },
@@ -40,7 +40,7 @@ export default function Skills() {
   ],
   softwaredevelopment: [
     {name: "C++", level: 3},
-    {name: "Java", level: 1},
+    {name: "Java", level: 3},
   ],
   operatingsystems: [
     {name: "Windows", level: 5},
