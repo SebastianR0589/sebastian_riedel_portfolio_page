@@ -1,14 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import { SiVercel, SiGithub} from "react-icons/si";
+import { SiVercel, SiGithub } from "react-icons/si";
 
 export default function ProjectCard({ project }) {
   const [hovered, setHovered] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
 
   const images = project.images || ["/Profilbild.jpg"];
-  const icon = project.icon || null;
-  const color = project.color || "white";
+  const tech = project.tech || [];
 
 
   useEffect(() => {
@@ -26,7 +25,6 @@ export default function ProjectCard({ project }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-
       <img
         src={images[currentImage]}
         alt={project.name}
@@ -38,12 +36,21 @@ export default function ProjectCard({ project }) {
           hovered ? "opacity-0" : "opacity-100"
         }`}
       >
-        <div
-          className="flex items-center gap-2 text-lg font-bold"
-          style={{ color }}
-        >
-          {icon}
-          <span>{project.framework}</span>
+        <div className="flex flex-col gap-1">
+          <div className="flex gap-3">
+            {tech.map((t, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-1"
+                style={{ color: t.color }}
+              >
+                {t.icon}
+                <span className="text-sm md:text-base font-semibold">
+                  {t.name}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
         <span className="text-white text-xl font-bold text-center">
           {project.name}
@@ -51,44 +58,43 @@ export default function ProjectCard({ project }) {
       </div>
 
       {hovered && (
-     <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 transition-opacity duration-500">
-  {project.vercel ? (
-    <>
-      <div className="w-20 h-px bg-white/50 scale-x-0 animate-[growLine_0.4s_ease-out_forwards]"></div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 transition-opacity duration-500">
+          {project.vercel ? (
+            <>
+              <div className="w-20 h-px bg-white/50 scale-x-0 animate-[growLine_0.4s_ease-out_forwards]"></div>
 
-      <a
-        href={project.vercel}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute top-1/2 -translate-y-[160%] px-3 py-2 rounded-full bg-black/50 text-white hover:scale-110 transition-transform flex items-center gap-2"
-      >
-        <SiVercel size={24} />
-        <span className="text-sm font-medium">Demo</span>
-      </a>
+              <a
+                href={project.vercel}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-1/2 -translate-y-[160%] px-3 py-2 rounded-full bg-black/50 text-white hover:scale-110 transition-transform flex items-center gap-2"
+              >
+                <SiVercel size={24} />
+                <span className="text-sm font-medium">Demo</span>
+              </a>
 
-      <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute top-1/2 translate-y-[60%] px-3 py-2 rounded-full bg-black/50 text-white hover:scale-110 transition-transform flex items-center gap-2"
-      >
-        <SiGithub size={26} />
-        <span className="text-sm font-medium">Repo</span>
-      </a>
-    </>
-  ) : (
-    <a
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="absolute top-1/2 -translate-y-1/2 px-3 py-2 rounded-full bg-black/50 text-white hover:scale-110 transition-transform flex items-center gap-2"
-    >
-      <SiGithub size={30} />
-      <span className="text-sm font-medium">Repo</span>
-    </a>
-  )}
-</div>
-
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-1/2 translate-y-[60%] px-3 py-2 rounded-full bg-black/50 text-white hover:scale-110 transition-transform flex items-center gap-2"
+              >
+                <SiGithub size={26} />
+                <span className="text-sm font-medium">Repo</span>
+              </a>
+            </>
+          ) : (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-1/2 -translate-y-1/2 px-3 py-2 rounded-full bg-black/50 text-white hover:scale-110 transition-transform flex items-center gap-2"
+            >
+              <SiGithub size={30} />
+              <span className="text-sm font-medium">Repo</span>
+            </a>
+          )}
+        </div>
       )}
     </div>
   );

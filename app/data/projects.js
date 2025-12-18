@@ -5,8 +5,9 @@ export const projects = {
         {
       name: "CRUD app sample",
       framework: "React",
-      icon: <SiReact size={32} />,
-      color: "#61dafb",
+  tech: [
+      { icon: <SiReact size={32} />, color: "#61dafb", name: "React" },
+    ],
       images: [
         "/projects/crud/standard.PNG",
         "/projects/crud/add.PNG",
@@ -18,8 +19,9 @@ export const projects = {
     {
       name: "Tenzies Game",
       framework: "React",
-      icon: <SiReact size={32} />,
-      color: "#61dafb",
+tech: [
+      { icon: <SiReact size={32} />, color: "#61dafb", name: "React" },
+    ],
       images: [
         "/projects/tenzies/default.PNG",
         "/projects/tenzies/mid_game.PNG",
@@ -31,8 +33,9 @@ export const projects = {
      {
       name: "Hangman Game",
       framework: "React",
-      icon: <SiReact size={32} />,
-      color: "#61dafb",
+tech: [
+      { icon: <SiReact size={32} />, color: "#61dafb", name: "React" },
+    ],
       images: [
         "/projects/hangman/active_game.PNG",
          "/projects/hangman/lost_game.PNG",
@@ -45,8 +48,9 @@ export const projects = {
        {
       name: "Manga Recommendations App",
       framework: "React",
-      icon: <SiReact size={32} />,
-      color: "#61dafb",
+tech: [
+      { icon: <SiReact size={32} />, color: "#61dafb", name: "React" },
+    ],
       images: [
         "/projects/manga/main_filled_out.PNG",
         "/projects/manga/main_interface.PNG",
@@ -59,8 +63,9 @@ export const projects = {
   fullstack: [  {
       name: "Portfolio Page",
       framework: "Next.js",
-      icon: <SiNextdotjs size={32} />,
-      color: "#f1f1f1ff",
+      tech: [
+      { icon: <SiNextdotjs size={32} />, color: "#f1f1f1ff", name: "Next.js" },
+    ],
       images: [
         "/projects/portfolio/hero_section.PNG",
         "/projects/portfolio/skills_section.PNG",
@@ -74,8 +79,9 @@ export const projects = {
     {
       name: "Java Springboot API Sample Runs",
       framework: "Java Springboot",
-      icon: <SiSpringboot size={32}/>,
-      color: "#6DB33F",
+      tech: [
+      { icon: <SiSpringboot size={32} />, color: "#6DB33F", name: "Springboot" },
+    ],
       images: [
         "/projects/java_rest_api_sample/files.PNG",
         "/projects/java_rest_api_sample/controller.PNG",
@@ -86,8 +92,9 @@ export const projects = {
     {
       name: "Node.js REST API Sample Travel Locations",
       framework: "Node.js",
-      icon: <SiNodedotjs size={32}/>,
-      color: "#339933",
+          tech: [
+      { icon: <SiNodedotjs size={32} />, color: "#339933", name: "Node.js" },
+    ],
       images: [
         "/projects/node_rest_api_sample/data.PNG",
         "/projects/node_rest_api_sample/utils.PNG",
@@ -98,8 +105,9 @@ export const projects = {
   {
       name: "Paranormal Sightings app",
       framework: "Node.js",
-      icon: <SiNodedotjs size={32}/>,
-      color: "#339933",
+       tech: [
+      { icon: <SiNodedotjs size={32} />, color: "#339933", name: "Node.js" },
+    ],
       images: [
         "/projects/paranormal_sightings/home.PNG",
         "/projects/paranormal_sightings/read.PNG",
@@ -110,8 +118,9 @@ export const projects = {
       {
       name: "Express.js API Sample startups",
       framework: "Express.js",
-      icon: <SiExpress size={32}/>,
-      color: "#f1f1f1ff",
+             tech: [
+      { icon: <SiExpress size={32} />, color: "#f1f1f1ff", name: "Express.js" },
+    ],
       images: [
         "/projects/express_api_sample/server.PNG",
         "/projects/express_api_sample/controller.PNG",
@@ -122,8 +131,9 @@ export const projects = {
     {
       name: "Express.js Vinyl Store",
       framework: "Express.js",
-      icon: <SiExpress size={32}/>,
-      color: "#f1f1f1ff",
+         tech: [
+      { icon: <SiExpress size={32} />, color: "#f1f1f1ff", name: "Express.js" },
+    ],
       images: [
         "/projects/vinyl_store/folders.PNG",
         "/projects/vinyl_store/controller.PNG",
@@ -134,8 +144,9 @@ export const projects = {
      {
       name: "SQL Sample Collection",
       framework: "SQL",
-      icon: <SiPostgresql size={32}/>,
-      color: "#336791",
+               tech: [
+      { icon: <SiPostgresql size={32} />, color: "#336791", name: "PostgreSQL" },
+    ],
       images: [
         "/projects/sql_sample/base.PNG",
         "/projects/sql_sample/data.PNG",
