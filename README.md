@@ -1,26 +1,41 @@
 # Sebastian Riedel Portfolio
 
-Welcome to my portfolio! Here you'll find some of the web projects I've built.
+This project represents my personal portfolio website and serves as a central place to showcase my background, technical skills and selected projects.
+
+The focus of this project was to build a clean, responsive and maintainable frontend using modern React-based tooling, while keeping the structure simple and easy to extend.
 
 ---
 
-### Portfolio Page
-**Description:**  
-This site represents my own porfolio page. The site gives information about me as a person, my technical skills, as well as a overview of my past projects.
+## Project Goals
+- Create a clear and structured overview of my profile and technical skill set  
+- Practice building a real-world React / Next.js application from scratch  
+- Focus on clean component structure, readability and maintainability  
+- Implement a responsive layout suitable for different screen sizes  
 
+---
 
-**GitHub Repo:** [Link to repo](https://github.com/SebastianR0589/sebastian_riedel_portfolio_page)
+## Features
+- Personal introduction and profile section  
+- Structured overview of technical skills  
+- Project section with descriptions and links to source code  
+- Fully responsive layout  
 
-**Screenshots:**
-![Screenshot 1](./screenshots/hero_section.PNG)
-![Screenshot 2](./screenshots/skills_section.PNG)
-![Screenshot 3](./screenshots/projects_section.PNG)
+---
 
+## Tech Stack
+- Next.js  
+- React  
+- Tailwind CSS  
+- React Icons  
 
-**Features:**
-- Personal information text block
-- Quick overview of my technical skills, represented in a dot-system
-- Overview and links to my past projects
+---
 
-**Tech Stack:**  
-Next.js, React, Rect-Icons, Tailwind
+## Screenshots
+![Hero Section](./screenshots/hero_section.PNG)
+![Skills Section](./screenshots/skills_section.PNG)
+![Projects Section](./screenshots/projects_section.PNG)
+
+---
+
+## Repository
+GitHub Repository: [Link to repo](https://github.com/SebastianR0589/sebastian_riedel_portfolio_page)
