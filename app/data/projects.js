@@ -72,6 +72,17 @@ export const projects = {
       ],
       link: "https://github.com/SebastianR0589/fullstack_react_springboot_manga_review_app",
     },
+       {
+      name: "Shopping List",
+      framework: "React + Express.js",
+      tech: [{ icon: <SiReact size={10} />, color: "#61dafb", name: "React" }, {icon: <SiExpress size={10} />, color: "#f1f1f1ff", name: "Express.js" }, { icon: <SiMongodb size={10} />, color: "#00ED64", name: "MongoDB" }],
+      images: [
+        "/projects/fullstack_react_express_shopping_list/hero_section.PNG",
+        "/projects/fullstack_react_express_shopping_list/skills_section.PNG",
+        "/projects/fullstack_react_express_shopping_list/projects_section.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/fullstack_react_express_shopping_list",
+    },
     {
       name: "Portfolio Page",
       framework: "Next.js",
