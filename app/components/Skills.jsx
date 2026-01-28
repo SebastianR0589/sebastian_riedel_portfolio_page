@@ -24,7 +24,7 @@ export default function Skills() {
   backend: [
     { name: "Node.js", level: 2 },
     { name: "Express.js", level: 2 },
-    { name: "Nest.js", level: 2 },
+    { name: "Next.js", level: 2 },
     { name: "Java Spring Boot", level: 3 },
     { name: "REST API", level: 3 },
     { name: "GraphQL", level: 3 },
