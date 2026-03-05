@@ -61,6 +61,20 @@ export const projects = {
     },
   ],
   fullstack: [
+      {
+      name: "Fullstack React Java Spring Boot Lifechievement App",
+      framework: "React + Springboot",
+      tech: [{ icon: <SiReact size={10} />, color: "#61dafb", name: "React" }, { icon: <SiSpringboot size={10} />, color: "#6DB33F", name: "Springboot" }],
+      images: [
+        "/projects/fullstack_java_react_lifechievement/active_tasks.PNG",
+        "/projects/fullstack_java_react_lifechievement/archive_tasks.PNG",
+        "/projects/fullstack_java_react_lifechievement/active_rewards.PNG",
+        "/projects/fullstack_java_react_lifechievement/archive_rewards.PNG",
+        "/projects/fullstack_java_react_lifechievement/frontend.PNG",
+        "/projects/fullstack_java_react_lifechievement/backend.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/lifechievement_project",
+    },
      {
       name: "Fullstack React Java Spring Boot Manga Review Sample",
       framework: "React + Springboot",
