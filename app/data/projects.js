@@ -1,5 +1,6 @@
 import {
   SiReact,
+  SiAngular,
   SiNextdotjs,
   SiNodedotjs,
   SiExpress,
@@ -75,10 +76,21 @@ export const projects = {
       ],
       link: "https://github.com/SebastianR0589/lifechievement_project",
     },
+       {
+      name: "Fullstack Angular Java Spring Boot Enterprise Dashboard",
+      framework: "Angular + Springboot",
+      tech: [{ icon: <SiAngular size={10} />, color: "#E03167", name: "Angular" }, { icon: <SiSpringboot size={10} />, color: "#6DB33F", name: "Springboot" }],
+      images: [
+        "/projects/fullstack_enterprise_dashboard/sample.PNG",
+        "/projects/fullstack_enterprise_dashboard/frontend.PNG",
+        "/projects/fullstack_enterprise_dashboard/backend.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/fullstack_enterprise_dashboard",
+    },
      {
       name: "Fullstack React Java Spring Boot Manga Review Sample",
       framework: "React + Springboot",
-      tech: [{ icon: <SiReact size={10} />, color: "#61dafb", name: "React" }, { icon: <SiSpringboot size={10} />, color: "#6DB33F", name: "Springboot" }, { icon: <SiMongodb size={10} />, color: "#00ED64", name: "MongoDB" }],
+      tech: [{ icon: <SiReact size={10} />, color: "#61dafb", name: "React" }, { icon: <SiSpringboot size={10} />, color: "#6DB33F", name: "Springboot" }],
       images: [
         "/projects/fullstack_java_react_manga_review/frontend.png",
         "/projects/fullstack_java_react_manga_review/mongodb.png",
@@ -89,7 +101,7 @@ export const projects = {
        {
       name: "Shopping List",
       framework: "React + Express.js",
-      tech: [{ icon: <SiReact size={10} />, color: "#61dafb", name: "React" }, {icon: <SiExpress size={10} />, color: "#f1f1f1ff", name: "Express.js" }, { icon: <SiMongodb size={10} />, color: "#00ED64", name: "MongoDB" }],
+      tech: [{ icon: <SiReact size={10} />, color: "#61dafb", name: "React" }, {icon: <SiExpress size={10} />, color: "#f1f1f1ff", name: "Express.js" }],
       images: [
         "/projects/fullstack_react_express_shopping_list/empty.PNG",
         "/projects/fullstack_react_express_shopping_list/filled.PNG",
