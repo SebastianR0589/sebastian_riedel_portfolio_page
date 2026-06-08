@@ -24,19 +24,21 @@ export default function Skills() {
   backend: [
     { name: "Node.js", level: 2 },
     { name: "Express.js", level: 2 },
-    { name: "Next.js", level: 2 },
     { name: "Java Spring Boot", level: 3 },
     { name: "REST API", level: 3 },
     { name: "GraphQL", level: 3 },
   ],
   databases: [
-    { name: "MongoDB", level: 2 },
+    { name: "MongoDB", level: 3 },
     { name: "MySQL", level: 2 },
     { name: "PostgreSQL", level: 3 },
   ],
   devops: [
     { name: "Git", level: 4 },
+    { name: "Docker", level: 3 },
+    { name: "CI/CD (GitHub Actions)", level: 3 },
     { name: "CI/CD (Jenkins)", level: 1 },
+    { name: "AWS", level: 1 },
   ],
   softwaredevelopment: [
     {name: "C++", level: 3},
@@ -54,9 +56,11 @@ export default function Skills() {
     {name: "Archer", level: 2},
   ],
   testing: [
-    {name: "Jest", level: 1},
+    {name: "Jest", level: 2},
     {name: "Cypress", level: 1},
-    {name: "Selenium", level: 1},
+    {name: "Playwright", level: 1},
+    {name: "JUnit", level: 2},
+    {name: "Mockito", level: 2},
   ],
   languages:[
     {name: "German", level: 5},
