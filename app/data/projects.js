@@ -76,7 +76,7 @@ export const projects = {
       ],
       link: "https://github.com/SebastianR0589/lifechievement_project",
     },
-       {
+      {
       name: "Fullstack Angular Java Spring Boot Enterprise Dashboard",
       framework: "Angular + Springboot",
       tech: [{ icon: <SiAngular size={10} />, color: "#E03167", name: "Angular" }, { icon: <SiSpringboot size={10} />, color: "#6DB33F", name: "Springboot" }],
@@ -86,6 +86,17 @@ export const projects = {
         "/projects/fullstack_enterprise_dashboard/backend.PNG",
       ],
       link: "https://github.com/SebastianR0589/fullstack_enterprise_dashboard",
+    },
+      {
+      name: "Fullstack Angular Java Spring Boot Booking Platform",
+      framework: "Angular + Springboot",
+      tech: [{ icon: <SiAngular size={10} />, color: "#E03167", name: "Angular" }, { icon: <SiSpringboot size={10} />, color: "#6DB33F", name: "Springboot" }],
+      images: [
+        "/projects/fullstack_booking_platform/sample.PNG",
+        "/projects/fullstack_booking_platform/frontend.PNG",
+        "/projects/fullstack_booking_platform/backend.PNG",
+      ],
+      link: "https://github.com/SebastianR0589/fullstack_booking_platform",
     },
      {
       name: "Fullstack React Java Spring Boot Manga Review Sample",
